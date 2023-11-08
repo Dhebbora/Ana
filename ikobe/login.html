@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap" rel="stylesheet">
+
+    <title>Ikobe</title>
+</head>
+<body>
+
+  <header>
+    <div class="home-img">
+      <img class="logo" src="./img/Logo.png" alt="">
+    </div>
+
+    <div class="home-menu">
+      <ul class="home-itens-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#card-animals">Animais</a></li>
+        <li>
+          <span>
+          Faça
+          <a href="../login.html"><b>Login</b></a>
+          ou
+          crie seu
+          <a href="../cadastro.html"><b>Cadastro</b></a>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class="home-btn">
+      <a href="http://">Faça sua doação!</a>
+    </div>
+      
+  </header>
+
+  <main>
+
+    <div class="container-form">
+
+      <div class="container-register">
+        <img src="../img/logoCadastro.png" alt="">
+
+        <form action="processar_formulario.php" method="post" id="form">
+            <input class="form-input" type="text" name="nome" placeholder="Nome de Usuário" required><br><br>
+            <input class="form-input" type="password" name="senha" placeholder="Senha" required><br><br>
+
+            <div class="form-couple">
+              <input class="form-btn" type="submit" value="ENTRAR">
+              <a href="http://"> Esqueceu sua senha?</a>
+            </div>
+            
+        </form>
+      </div>
+
+      <div class="container-access">
+        <p>Quero acessar com minhas redes sociais</p>
+        <div class="access-account">
+          <a href=""><img src="./img/face.png" alt=""></a></li>
+          <a href=""><img src="./img/gmail.png" alt=""></a></li>
+        </div>
+      </div>
+
+    </div>
+      
+  </main>
+
+  <footer>
+    <p class="footer-text">@Todos os direitos reservados - Uniaeso 2023</p>
+  </footer>
+    
+</body>
+</html>
