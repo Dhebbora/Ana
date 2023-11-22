@@ -79,20 +79,30 @@ main{
 }
 
 
-.search-container {
-    margin: 33px;
-    align-content: flex-end;
+.search-container{
+    margin: 32px;
+    width: 96%;
+    align-items: flex-end;
+    display: flex;
+}
+
+.txt-animal{
+    width: 96%;
+    align-items: flex-end;
+    display: flex;
+    font-size: 30px;
+    padding: 22px;
 }
 
 .search-box {
-    width: 392px;
-    padding: 9px;
+    width: 52%;
+    padding: 14px;
     border: none;
-    border-radius: 25px; /* Bordas redondas */
+    border-radius: 45px;
     font-size: 16px;
-    padding-left: 35px; /* Espaço para o ícone */
-    background: #f1f1f1 url('https://img.icons8.com/ios-filled/50/000000/search--v1.png') no-repeat 8px center; /* Ícone de busca à esquerda */
-    background-size: 20px; /* Tamanho do ícone */
+    padding-left: 35px; 
+    background: #f1f1f1 url('https://img.icons8.com/ios-filled/50/000000/search--v1.png') no-repeat 8px center;
+    background-size: 20px; 
 }
 
 .search-button {
@@ -116,7 +126,6 @@ main{
     margin: 10px;
     border: none;
     border-radius: 8px;
-    padding: 10px;
     box-sizing: border-box; /* Leva em consideração as bordas e o preenchimento ao calcular a largura */
 }
 
