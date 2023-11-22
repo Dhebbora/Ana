@@ -133,6 +133,10 @@ main{
 .container-animals img{
     width: 72%;
 }
+.container-animals a{
+    text-decoration: none;
+    color: black;
+}
 .container-button{
     display: flex;
     justify-content: center;

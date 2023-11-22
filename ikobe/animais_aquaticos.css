@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* CABEÇALHO */
+
+header{
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  4px -8px 27px black;
+}
+.home-img{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 67%;
+    text-align: center;
+    align-items: center;
+}
+.home-menu{
+    width: 49%;
+}
+.home-itens-menu, li{
+    display: flex;
+    padding-top: 12px;
+    justify-content: space-around;
+    font-weight: 600;
+}
+.home-itens-menu a{
+    text-decoration: none;
+    color:  rgb(72, 72, 72);
+}
+.home-itens-menu a:hover{
+    border-bottom: 2px solid salmon;
+}
+
+.home-btn{
+    padding: 24px;
+    width: 15%;
+    background-color: chocolate;
+    transform: rotate(-90deg);
+    border-radius: 90px 0px 0px 90px;
+    font-weight: 800;
+}
+.home-btn:hover{
+    background-image: linear-gradient(-290deg,salmon,orange)
+}
+
+.home-btn a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+/* CARDS */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 99px;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 66%;
+}
+
+
+.search-container {
+    margin: 33px;
+    align-content: flex-end;
+}
+
+.search-box {
+    width: 392px;
+    padding: 9px;
+    border: none;
+    border-radius: 25px; /* Bordas redondas */
+    font-size: 16px;
+    padding-left: 35px; /* Espaço para o ícone */
+    background: #f1f1f1 url('https://img.icons8.com/ios-filled/50/000000/search--v1.png') no-repeat 8px center; /* Ícone de busca à esquerda */
+    background-size: 20px; /* Tamanho do ícone */
+}
+
+.search-button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card-animals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: calc(14.28% - 20px); /* Calculado para mostrar 7 cards por linha */
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box; /* Leva em consideração as bordas e o preenchimento ao calcular a largura */
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+/* CARD ANIMAIS ABERTO */
+
+.card-animal-open{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    padding: 32px;
+    background-color: #f0f0f0;
+    border-radius: 45px;
+}
+
+.header-card-animal{
+   padding-bottom: 16px;
+}
+.header-card-animal h1{
+   color: #24907D;
+
+}
+
+.body-card-animal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 32px;
+}
+
+.txt-card-animal{
+    width: 59%;
+}
+
+.body-card-animal span{
+    color: rgb(101, 101, 101);
+    font-size: 14px;
+}
+
+.body-card-animal span{
+    color: #24907D;
+    font-size: 14px;
+    font-weight: 700;
+}
+.body-card-animal p{
+    color: #2d2d2d;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.video-card-animal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+
+}
+
+.overlay {
+    position: fixed;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-animal-open {
+    display: none;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 12px;
+    height: 39px;
+    color: rgb(37, 37, 37);
+    background-color: #81B2CD;
+    
+}
+
+.footer-text{
+    font-weight: 600;
+}
