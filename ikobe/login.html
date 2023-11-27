@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="/login.js" type="module"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;800&display=swap" rel="stylesheet">
 
@@ -45,12 +46,12 @@
       <div class="container-register">
         <img src="../img/logoCadastro.png" alt="">
 
-        <form action="processar_formulario.php" method="post" id="form">
-            <input class="form-input" type="text" name="nome" placeholder="Nome de Usuário" required><br><br>
-            <input class="form-input" type="password" name="senha" placeholder="Senha" required><br><br>
+        <form id="form">
+            <input class="form-input" type="email" id="email" name="email" placeholder="Email de Usuário" required><br><br>
+            <input class="form-input" type="password" id="senha" name="senha" placeholder="Senha" required><br><br>
 
             <div class="form-couple">
-              <input class="form-btn" type="submit" value="ENTRAR">
+              <button class="form-btn" type="submit" value="ENTRAR">ENTRAR</button>
               <a href="/pageNotFound.html"> Esqueceu sua senha?</a>
             </div>
             
